@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArrayTools/ArrayTools.iml" filepath="$PROJECT_DIR$/ArrayTools/ArrayTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BuyBookSysOOP/BuyBookSysOOP.iml" filepath="$PROJECT_DIR$/BuyBookSysOOP/BuyBookSysOOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CarRentOOP/CarRentOOP.iml" filepath="$PROJECT_DIR$/CarRentOOP/CarRentOOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChiHuoLianMeng/ChiHuoLianMeng.iml" filepath="$PROJECT_DIR$/ChiHuoLianMeng/ChiHuoLianMeng.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExceptionPractise/ExceptionPractise.iml" filepath="$PROJECT_DIR$/ExceptionPractise/ExceptionPractise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaOOP/JavaOOP.iml" filepath="$PROJECT_DIR$/JavaOOP/JavaOOP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TP01/TP01.iml" filepath="$PROJECT_DIR$/TP01/TP01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TP02/TP02.iml" filepath="$PROJECT_DIR$/TP02/TP02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TP03/TP03.iml" filepath="$PROJECT_DIR$/TP03/TP03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TP04/TP04.iml" filepath="$PROJECT_DIR$/TP04/TP04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TP05/TP05.iml" filepath="$PROJECT_DIR$/TP05/TP05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TP06/TP06.iml" filepath="$PROJECT_DIR$/TP06/TP06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TP07/TP07.iml" filepath="$PROJECT_DIR$/TP07/TP07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test.iml" filepath="$PROJECT_DIR$/test.iml" />
+    </modules>
+  </component>
+</project>

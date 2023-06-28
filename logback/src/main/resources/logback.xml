@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--应用日志文件保存路径 -->
+    <property name="LOG_HOME" value="logs"/>
+    <!-- 控制台输出 -->
+    <appender name="APP_STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%c类名，%t表示线程名，%L行， %p日志级别 %msg：日志消息，%n是换行符  -->
+            <pattern>%red(%d{yyyy-MM-dd HH:mm:ss}) %green([%c][%t][%L]) %highlight(%-5level) - %blue(%msg%n)</pattern>
+        </encoder>
+    </appender>
+    <!-- 按照每天生成日志文件 -->
+    <appender name="APP_DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名 -->
+            <FileNamePattern>${LOG_HOME}/debug-%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--日志文件保留天数 -->
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%c类名，%t表示线程名，%L行， %p日志级别 %msg：日志消息，%n是换行符  -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%c][%t][%L][%p] - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <!-- 此日志文件只记录debug级别的 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>debug</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- 按照每天生成日志文件：主项目日志 -->
+    <appender name="APP_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名 -->
+            <FileNamePattern>${LOG_HOME}/error-%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--日志文件保留天数 -->
+            <MaxHistory>30</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%c类名，%t表示线程名，%L行， %p日志级别 %msg：日志消息，%n是换行符  -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%c][%t][%L][%p] - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <!-- 此日志文件只记录error级别的 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>error</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--日志输出到文件-->
+    <root level="DEBUG">
+        <appender-ref ref="APP_DEBUG"/>
+        <appender-ref ref="APP_ERROR"/>
+        <appender-ref ref="APP_STDOUT"/>
+    </root>
+</configuration>
