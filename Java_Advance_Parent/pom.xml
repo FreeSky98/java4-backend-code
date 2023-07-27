@@ -11,6 +11,8 @@
     <modules>
         <module>Chapter01</module>
         <module>Chapter02</module>
+        <module>supermarket_member_management_system</module>
+        <module>Chapter03</module>
     </modules>
 
     <dependencies>
@@ -18,6 +20,11 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>5.8.16</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.11</version>
         </dependency>
     </dependencies>
 
