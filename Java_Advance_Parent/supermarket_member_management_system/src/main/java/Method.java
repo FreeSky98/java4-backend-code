@@ -6,7 +6,6 @@ import java.util.*;
 public class Method {
     static Scanner input = new Scanner(System.in);
     static List<Vip> vipList = new ArrayList<>();
-    static Vip vip = new Vip();
 
     public static void showInfo() {
         System.out.println("******************欢迎进入超市会员管理系统****************************");
@@ -55,61 +54,69 @@ public class Method {
     }
 
     public static void addPoint() {
-        if (isLogin()) {
-            System.out.print("请输入您此次消费的金额(消费1元累计1积分):");
-            BigDecimal money = new BigDecimal(input.next());
+        for (Vip vip : vipList) {
+            if (isLogin()) {
+                System.out.print("请输入您此次消费的金额(消费1元累计1积分):");
+                BigDecimal money = new BigDecimal(input.next());
 //            System.out.println(money);
-            int res = vip.getPoint() + money.intValue();
-            vip.setPoint(res);
-            System.out.println("积分累计成功！");
-
+                int res = vip.getPoint() + money.intValue();
+                vip.setPoint(res);
+                System.out.println("积分累计成功！");
+                break;
+            }
         }
     }
 
     public static void exchangePoint() {
-        if (isLogin()) {
-            System.out.println("请输入您需要兑换使用的积分(100积分抵用0.1元,不足100的积分不能抵用):");
-            int inputPoint = input.nextInt();
+        for (Vip vip : vipList) {
+            if (isLogin()) {
+                System.out.println("请输入您需要兑换使用的积分(100积分抵用0.1元,不足100的积分不能抵用):");
+                int inputPoint = input.nextInt();
 
-            if (vip.getPoint() < 100 || vip.getPoint() < inputPoint) {
-                System.err.println("抱歉，您的积分不足，无法兑换！");
-            } else {
-                double exchangedMoney = (double) inputPoint / 1000;
-                int res = vip.getPoint() - inputPoint;
-                vip.setPoint(res);
-                System.out.println("您的消费金额中使用会员积分抵消" + exchangedMoney + "元");
-                System.out.println("积分兑换成功！");
+                if (vip.getPoint() < 100 || vip.getPoint() < inputPoint) {
+                    System.err.println("抱歉，您的积分不足，无法兑换！");
+                } else {
+                    double exchangedMoney = (double) inputPoint / 1000;
+                    int res = vip.getPoint() - inputPoint;
+                    vip.setPoint(res);
+                    System.out.println("您的消费金额中使用会员积分抵消" + exchangedMoney + "元");
+                    System.out.println("积分兑换成功！");
+                    break;
+                }
             }
         }
-
     }
 
 
     public static void searchPoint() {
-        if (isLogin()) {
-            System.out.println("姓名\t\t会员卡号\t\t\t积分\t\t开卡日期");
-            System.out.println(vip.getUsername() + "\t\t" + vip.getCardNo() + "\t\t" + vip.getPoint() + "\t\t" + vip.getOpenDate());
+        for (Vip vip : vipList) {
+            if (isLogin()) {
+                System.out.println("姓名\t\t会员卡号\t\t\t积分\t\t开卡日期");
+                System.out.println(vip.getUsername() + "\t\t" + vip.getCardNo() + "\t\t" + vip.getPoint() + "\t\t" + vip.getOpenDate());
+                break;
+            }
         }
-
     }
 
     public static void changePassword() {
-        if (isLogin()) {
-
-            System.out.print("请输入新的会员密码：");
-            String password = input.next();
-            while (password.length() < 6) {
-                System.out.println("密码长度不能小于6位！");
-                System.out.print("请再次输入注册密码：");
-                password = input.next();
+        for (Vip vip : vipList) {
+            if (isLogin()) {
+                System.out.print("请输入新的会员密码：");
+                String password = input.next();
+                while (password.length() < 6) {
+                    System.out.println("密码长度不能小于6位！");
+                    System.out.print("请再次输入注册密码：");
+                    password = input.next();
+                }
+                while (password.equals(vip.getPassword())) {
+                    System.err.println("新密码和上次密码不能相同！");
+                    System.out.print("请再次输入注册密码：");
+                    password = input.next();
+                }
+                vip.setPassword(password);//存储密码
+                System.out.println("密码修改成功！");
+                break;
             }
-            while (password.equals(vip.getPassword())) {
-                System.err.println("新密码和上次密码不能相同！");
-                System.out.print("请再次输入注册密码：");
-                password = input.next();
-            }
-            vip.setPassword(password);//存储密码
-            System.out.println("密码修改成功！");
         }
     }
 
