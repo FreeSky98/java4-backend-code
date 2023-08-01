@@ -13,6 +13,7 @@
         <module>Chapter02</module>
         <module>supermarket_member_management_system</module>
         <module>Chapter03</module>
+        <module>Reflect</module>
     </modules>
 
     <dependencies>
