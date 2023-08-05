@@ -9,7 +9,7 @@ class ExamPaper {
 
     public synchronized void distribute() {
         paperCount++;
-        System.out.println(Thread.currentThread().getName() + " 分发试卷，试卷编号：" + paperCount);
+        System.out.println(Thread.currentThread().getName() + "正在分发试卷，试卷编号：" + paperCount);
     }
 }
 
@@ -25,7 +25,7 @@ class Teacher implements Runnable {
         for (int i = 1; i <= 10; i++) {
             examPaper.distribute();
             try {
-                Thread.sleep(100); // 线程休眠0.1秒钟
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

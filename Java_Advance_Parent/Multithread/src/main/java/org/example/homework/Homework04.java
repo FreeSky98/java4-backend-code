@@ -27,7 +27,7 @@ class Depositor implements Runnable {
         for (int i = 1; i <= 3; i++) {
             account.deposit(100);
             try {
-                Thread.sleep(1000); // 线程休眠1秒钟
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
