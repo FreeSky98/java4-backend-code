@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE scores>
+
+<!-- 声明内部DTD -->
+<scores>
+  <student id="2">
+    <name>李佳</name>
+    <course>sql</course>
+    <score>60</score>
+  </student>
+  <student id="3">
+    <name>王二狗</name>
+    <course>经济学原理</course>
+    <score>88</score>
+  </student>
+  <student id="4">
+    <name>刘德华</name>
+    <course>怎样做一个好演员</course>
+    <score>100</score>
+  </student>
+  <scores>
+    <id>5</id>
+    <name>学生5</name>
+    <course>科目5</course>
+    <score>90</score>
+  </scores>
+</scores>

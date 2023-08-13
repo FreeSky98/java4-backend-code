@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<bookrack>
+    <book id="1000">
+        <title>你干嘛哎哟</title>
+        <author>汪XX</author>
+        <price>99.8</price>
+    </book>
+    <book id="1001">
+        <title>蔡姓男子居然在这个时间点变性？！真相原来是...</title>
+        <author>李X</author>
+        <price>13.2</price>
+    </book>
+</bookrack>

@@ -8,17 +8,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26089660-93d6-4dab-8022-8c4374984870" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo5/JoinTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo5/PractiseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo5/PractiseTest02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo5/SleepTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo5/ThreadPriorityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/homework/Homework05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo6/NetTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo6/ReentranstTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo6/SynchLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo7/CollectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo7/DeadLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/demo7/Relay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/example/IPTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/homework_dom4j/HW01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/homework_dom4j/XmlReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net1/FileStorageProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net1/FileStorageServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net1/MyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net2/ClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net2/ServerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net3/AppClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net3/AppServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net3/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net3/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net3/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net4/ChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net4/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net4/ClassRoom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net4/FastJsonDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net4/JsonParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net4/ServerHandlerTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net4/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net4/WebSite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net5/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net5/Crawler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/src/main/java/org/net5/DownloadVideoThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/xml_data/books.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NetProgram/xml_data/scores.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Multithread/src/main/java/org/example/homework/Homework03.java" beforeDir="false" afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/homework/Homework03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Multithread/src/main/java/org/example/homework/Homework04.java" beforeDir="false" afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/homework/Homework04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multithread/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Multithread/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multithread/src/main/java/org/example/homework/Homework05.java" beforeDir="false" afterPath="$PROJECT_DIR$/Multithread/src/main/java/org/example/homework/Homework05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,35 +108,38 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/java_projects/Java_Advance_Parent/Multithread/src/main/java/org/example/Main.java&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/java_projects/Java_Advance_Parent/NetProgram/src/main/java/org/example/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.net4" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java_projects\Java_Advance_Parent\Reflect\src\main\resources" />
       <recent name="D:\java_projects\Java_Advance_Parent\Chapter03\src\main\java\homework0727\HW03" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java_projects\Java_Advance_Parent\Reflect\src\main\java\org\example\v5" />
-      <recent name="D:\java_projects\Java_Advance_Parent\Reflect\src\main\java\org\example\v3" />
-      <recent name="D:\java_projects\Java_Advance_Parent" />
-      <recent name="D:\java_projects\Java_Advance_Parent\Chapter03\src\main\java\serial" />
-      <recent name="D:\java_projects\Java_Advance_Parent\Chapter03\src\main\java\homework0727" />
+      <recent name="D:\java_projects\Java_Advance_Parent\NetProgram\src\main\java\org\homework_dom4j" />
+      <recent name="D:\java_projects\Java_Advance_Parent\NetProgram\src\main\java\org\net5" />
+      <recent name="D:\java_projects\Java_Advance_Parent\NetProgram\src\main\java\org\net4" />
+      <recent name="D:\java_projects\Java_Advance_Parent\NetProgram\src\main\java\org\net3" />
+      <recent name="D:\java_projects\Java_Advance_Parent\NetProgram\src\main\java\org\example" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Homework05">
-    <configuration name="Homework05 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.homework.Homework05" />
-      <module name="Multithread" />
+  <component name="RunManager" selected="应用程序.HW01">
+    <configuration name="AppTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.net5.AppTest" />
+      <module name="NetProgram" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.homework.*" />
+          <option name="PATTERN" value="org.net5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework05 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.homework.Homework05" />
-      <module name="Multithread" />
+    <configuration name="Crawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.net5.Crawler" />
+      <module name="NetProgram" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.homework.*" />
+          <option name="PATTERN" value="org.net5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +160,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework05 (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.homework.Homework05" />
-      <module name="Multithread" />
+    <configuration name="HW01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.homework_dom4j.HW01" />
+      <module name="NetProgram" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.homework.*" />
+          <option name="PATTERN" value="org.homework_dom4j.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +173,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework05 (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.homework.Homework05" />
-      <module name="Multithread" />
+    <configuration name="XmlReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.dom4j.XmlReader" />
+      <module name="NetProgram" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.homework.*" />
+          <option name="PATTERN" value="org.dom4j.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -153,12 +186,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.homework.Homework05" />
-      <module name="Multithread" />
+    <configuration name="org.homework_dom4j.XmlReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.homework_dom4j.XmlReader" />
+      <module name="NetProgram" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.homework.*" />
+          <option name="PATTERN" value="org.homework_dom4j.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -181,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Homework05" />
-        <item itemvalue="应用程序.Homework05 (4)" />
-        <item itemvalue="应用程序.Homework05 (3)" />
-        <item itemvalue="应用程序.Homework05 (2)" />
-        <item itemvalue="应用程序.Homework05 (1)" />
+        <item itemvalue="应用程序.HW01" />
+        <item itemvalue="应用程序.org.homework_dom4j.XmlReader" />
+        <item itemvalue="应用程序.XmlReader" />
+        <item itemvalue="应用程序.AppTest" />
+        <item itemvalue="应用程序.Crawler" />
       </list>
     </recent_temporary>
   </component>
@@ -241,6 +274,16 @@
       <workItem from="1691128523732" duration="12094000" />
       <workItem from="1691199529588" duration="4438000" />
       <workItem from="1691204271491" duration="64000" />
+      <workItem from="1691388678158" duration="14002000" />
+      <workItem from="1691458142102" duration="105000" />
+      <workItem from="1691474195715" duration="13324000" />
+      <workItem from="1691561074273" duration="14290000" />
+      <workItem from="1691575544224" duration="2515000" />
+      <workItem from="1691647373437" duration="13980000" />
+      <workItem from="1691734165783" duration="13921000" />
+      <workItem from="1691896065041" duration="4402000" />
+      <workItem from="1691900729984" duration="169000" />
+      <workItem from="1691911563857" duration="568000" />
     </task>
     <servers />
   </component>
