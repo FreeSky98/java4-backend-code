@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cameras xmlns:canon="http://www.canon.com.cn"
+xmlns:nikon="http://http://www.nikon.com.cn">
+    <canon:camera id="P663">
+        <name>CameraCanon</name>
+    </canon:camera>
+    <nikon:camera id="K28B3">
+        <name>CameraNikon</name>
+    </nikon:camera>
+</cameras>

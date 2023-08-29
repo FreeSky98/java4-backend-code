@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cities>
+    <province id="340000">
+        <name>安徽省</name>
+        <city id="340100"><![CDATA[合肥市]]></city>
+        <city id="340200">芜湖市</city>
+        <city id="340300">蚌埠市</city>
+        <city id="340400">淮南市</city>
+    </province>
+    <province id="20">
+        <name>台湾省</name>
+        <city id="710101">台北市</city>
+        <city id="710102">基隆市</city>
+        <city id="710103">新北市</city>
+    </province>
+    <province id="320000">
+        <name>江苏省</name>
+        <city id="320100">南京市</city>
+        <city id="320200">无锡市</city>
+        <city id="320300">徐州市</city>
+    </province>
+</cities>

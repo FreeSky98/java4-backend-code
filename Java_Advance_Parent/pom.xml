@@ -16,6 +16,10 @@
         <module>Reflect</module>
         <module>Multithread</module>
         <module>NetProgram</module>
+        <module>novel_reader_project</module>
+        <module>xml_parse</module>
+        <module>Jdbc-01</module>
+        <module>Project</module>
     </modules>
 
     <dependencies>

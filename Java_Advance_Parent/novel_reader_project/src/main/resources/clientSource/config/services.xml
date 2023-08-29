@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<services>
+	<service key="start">cn.ksb.minitxt.services.StartService</service>
+	<!-- 继续添加其他客户端功能 -->
+</services>

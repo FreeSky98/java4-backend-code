@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<movies> 
+  <movie id="1413252"> 
+    <name>八角笼中</name>  
+    <type>剧情</type>  
+    <period>117</period>  
+    <price>25.5</price>  
+    <releaseDate>2023-07-06</releaseDate>  
+    <director>王宝强</director> 
+  </movie>  
+  <movie id="1374349"> 
+    <name>孤注一掷</name>  
+    <type>犯罪，剧情</type>  
+    <period>130</period>  
+    <price>28.8</price>  
+    <releaseDate>2023-08-08</releaseDate>  
+    <director>申奥</director> 
+  </movie>  
+  <movie id="1475137">
+    <name>长安三万里</name>
+    <type>历史,动画</type>
+    <period>168</period>
+    <price>7.5</price>
+    <releaseDate>2023-07-08</releaseDate>
+    <director>谢君伟,邹靖</director>
+  </movie>
+</movies>

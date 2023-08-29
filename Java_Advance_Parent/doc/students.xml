@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE students SYSTEM "D:\java_projects\Java_Advance_Parent\xml_parse\doc\students.dtd">
+<students>
+    <student id="1">
+        <name>Alice</name>
+        <gender>girl</gender>
+        <age>18</age>
+    </student>
+    <student id="2">
+        <name>Ben</name>
+        <gender>boy</gender>
+        <age>17</age>
+    </student>
+</students>
