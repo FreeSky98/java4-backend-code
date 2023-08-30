@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <title>学员管理</title>
+    <script src="static/axios.js"></script>
+    <script src="static/query.min.js"></script>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th {
+            border: 1px solid pink;
+            height: 30px;
+            background-color: pink;
+            color: black;
+        }
+        table td {
+            border: 1px solid pink;
+            height: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>学员管理</h2>
+    <table border="">
+        <thead>
+            <tr>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody class="results">
+
+        </tbody>
+    </table>
+
+    <script>
+        const ajax = axios.create({
+            baseURL: 'http://localhost:8080'
+        })
+        ajax({
+            method: 'GET',
+            url: '/student/list',
+        }).then(res => {
+            console.log(res.data.data)
+            for(let stu of res.data.data) {
+                $('.results').append(`<tr>
+                                     <td>${stu.id}</td>
+                                     <td>${stu.name}</td>
+                                     <td>${stu.age}</td>
+                                     <td>
+                                         <a href="#">编辑</a>
+                                         <a href="#">删除</a>
+                                         <a href="#">查看</a>
+                                     </td>
+                                    </tr>`)
+
+            }
+        }).catch(err => {
+            console.log(err)
+            console.log('Network error!')
+        })
+    </script>
+</body>
+</html>

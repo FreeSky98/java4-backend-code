@@ -13,79 +13,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26089660-93d6-4dab-8022-8c4374984870" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/AddBatch/AddBatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/AddBatch/InsertBatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/AddBatch/MockDataUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/DaoSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/Jdbc/JdbcTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/Jdbc/Jdbc_01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/Jdbc/Jdbc_02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/Jdbc/Jdbc_03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/Jdbc/Jdbc_04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/Jdbc/Jdbc_05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/Jdbc/Jdbc_06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/PatientP0.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/TestReflect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/main/java/org/example/TestTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jdbc-01/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/cities.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/clothes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/douban.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/movies.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/students.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/students.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/カメラ" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/java/org/example/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/java/org/example/Init.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/java/org/example/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/java/org/example/client.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/clientSource/config/client.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/clientSource/config/services.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/config/classes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/config/novel.mdl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/config/server.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/config/services.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/config/txt_wuxia.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/config/txt_yanqing.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/config/users.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/txtcatalog/wuxia/古侠今遇.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/txtcatalog/wuxia/寒剑孤灯.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/txtcatalog/yanqing/弄儿的后宫.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/novel_reader_project/src/main/resources/serverSource/txtcatalog/yanqing/杯中童话.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xml_parse/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xml_parse/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xml_parse/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xml_parse/src/main/java/org/example/App2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xml_parse/src/main/java/org/example/App3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xml_parse/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/.idea/dictionaries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/app/StudentAddServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/util/JsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/util/R.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/util/ResponseStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/webapp/WEB-INF/hello.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/src/main/webapp/WEB-INF/student_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goods.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webapp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webapp/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webapp/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webapp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../webapp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.idea/dictionaries" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/app/StudentAddServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/app/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/app/StudentListServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/spider/SpiderUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/test/InsertBatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/test/MockDataUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/util/DaoSupport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/util/JsonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/util/R.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/java/com/javaboy/util/ResponseStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/webapp/WEB-INF/hello.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/webapp/WEB-INF/student_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/src/main/webapp/static/js/qs.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -379,6 +334,7 @@
       <workItem from="1692948988581" duration="8835000" />
       <workItem from="1693202650029" duration="5165000" />
       <workItem from="1693216182744" duration="16000" />
+      <workItem from="1693386623157" duration="4000" />
     </task>
     <servers />
   </component>

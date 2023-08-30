@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基于Vue的ElementUI组件库实现学员管理模块</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../plugins/elementui/index.css">
+    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+<body class="hold-transition">
+    <div id="app">
+        <div class="content-header">
+            <h1>学生管理</h1>
+        </div>
+        <div class="app-container">
+            <div class="box">
+                <div class="filter-container">
+                    <el-button type="primary" class="butT" @click="handleOpen()">添加</el-button>
+                </div>
+                <el-table size="small" current-row-key="id" :data="tableData" stripe highlight-current-row>
+                    <!--<el-table-column type="index" align="center" label="#"></el-table-column>-->
+                    <el-table-column prop="id" label="学号" align="center"></el-table-column>
+                    <el-table-column prop="name" label="姓名" align="center"></el-table-column>
+                    <el-table-column prop="age" label="年龄" align="center"></el-table-column>
+                    <el-table-column
+                            label="性别" align="center">
+                        <template slot-scope="scope">
+                            <span style="margin-left: 10px">{{ scope.row.sex ? "男" : "女" }}</span>
+                        </template>
+                    </el-table-column>
+                    <el-table-column prop="dept" label="院系" align="center"></el-table-column>
+                    <el-table-column prop="address" label="住址" align="center"></el-table-column>
+
+                    <el-table-column label="操作" align="center">
+                        <template slot-scope="scope">
+                            <el-button type="success" size="mini" @click="handleUpdate(scope.row)">编辑</el-button>
+                            <el-button type="danger" size="mini" @click="handleDelete(scope.row)">删除</el-button>
+                        </template>
+                    </el-table-column>
+                </el-table>
+
+                <!-- 添加学生对话框 -->
+                <div class="add-form">
+                   <el-dialog :close-on-press-escape="false"
+                    :close-on-click-modal="false" title="添加学生" :visible.sync="dialogVisible">
+                        <el-form status-icon ref="addFormRef" :model="formData" :rules="rules" label-position="right" label-width="100px">
+                            <el-row>
+                                <el-col :span="12">
+                                    <el-form-item label="姓名" prop="name">
+                                        <el-input v-model="formData.name" autocomplete="off"></el-input>
+                                    </el-form-item>
+                                </el-col>
+                                <el-col :span="12">
+                                    <el-form-item label="年龄" prop="age">
+                                        <el-input v-model.number="formData.age"></el-input>
+                                    </el-form-item>
+                                </el-col>
+
+                            </el-row>
+                            <el-row>
+                                <el-col :span="12">
+                                    <el-form-item label="性别" prop="sex">
+                                        <el-radio-group v-model="formData.sex">
+                                            <el-radio :label="0">男</el-radio>
+                                            <el-radio :label="1">女</el-radio>
+                                        </el-radio-group>
+                                    </el-form-item>
+                                </el-col>
+                                <el-col :span="12">
+                                    <el-form-item label="院系" prop="dept">
+                                        <el-input v-model="formData.dept"></el-input>
+                                    </el-form-item>
+                                </el-col>
+                            </el-row>
+
+                            <el-row>
+                                <el-col :span="24">
+                                    <el-form-item label="地址" prop="address">
+                                        <el-input type="textarea" v-model="formData.address"></el-input>
+                                    </el-form-item>
+                                </el-col>
+                            </el-row>
+                        </el-form>
+                       <div slot="footer" class="dialog-footer">
+                           <el-button type="danger" @click="handleClose()">关闭</el-button>
+                           <el-button type="primary" @click="handleSubmit()">提交</el-button>
+                       </div>
+                   </el-dialog>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- 引入组件库 -->
+    <script src="../js/vue.js"></script>
+    <script src="../plugins/elementui/index.js"></script>
+    <script src="../axios.js"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/qs/6.10.1/qs.js"></script>
+    <script>
+        const vue = new Vue({
+            el: '#app',
+            data:{
+                dialogVisible: false, //添加表单是否可见
+                formData: {
+                    name: '',
+                    age: '',
+                    sex:  1,
+                    dept: '',
+                    address: ''
+                },
+                rules: {
+                    name: [
+                        { required: true, message: '请输入学生姓名', trigger: 'blur' },
+                    ],
+                    age : [
+                        { required: true, message: '请输入学生年龄', trigger: 'blur' },
+                    ],
+                    dept : [
+                        { required: true, message: '请输入院系', trigger: 'blur' },
+                    ],
+                    address : [
+                        { required: true, message: '请输入家庭住址', trigger: 'blur' },
+                    ]
+                },
+                tableData: []//当前页要展示的列表数据
+            },
+            //钩子函数，VUE对象初始化完成后自动执行
+            mounted() {
+                //调用查询全部数据的操作
+                this.getAll();
+            },
+            methods: {
+                //弹出添加学生对话框
+                handleOpen() {
+                    this.dialogVisible = true; //弹出添加学生窗口
+                    this.resetForm()
+                },
+                handleSubmit() {
+                    this.$refs['addFormRef'].validate((valid) => {
+                        if (valid) {
+
+                            //axios使用post请求方式发送表单数据
+
+
+                            /*axios.get('/student/add', {
+                                params:  this.formData
+                            }).then(function (response) {
+                                    console.log(response);
+                            }).catch(function (error) {
+                                    console.log(error);
+                            });*/
+
+                            //可以使用qs的stringify()将对象转换成FormData格式
+                            let qs = Qs;
+                            let bodyFormData = qs.stringify(this.formData);
+                            console.log(bodyFormData)
+                            axios({
+                                method: 'post',
+                                url: '/student/add',
+                                data: bodyFormData,
+                                headers: {
+                                    'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8' //application/x-www-form-urlencoded application/json multipart/form-data
+                                    //'Authorization': 'Bearer ' + token
+                                }
+                            }).then(response => {
+                                console.log("服务器响应JSON格式数据",response.data)
+                                if (response.data.code == 200) {
+                                    this.dialogVisible = false //关闭添加学生窗口
+                                    this.$message.success(response.data.msg)
+                                }
+                                else {
+                                    this.$message.error(response.data.msg)
+                                }
+                            }).finally(() => {
+                                 // 重新加载刚添加的数据
+                                this.getAll()
+                            });
+                        }
+                    });
+                },
+                resetForm() {
+                    this.$refs['addFormRef'].resetFields(); //重置表单
+                    //this.formData = {}
+                },
+                handleClose(){
+                    this.dialogVisible = false;
+                },
+                //分页查询
+                getAll() {
+                    const ajax = axios.create({
+                        baseURL: 'http://localhost:8080'
+                    })
+                    ajax({
+                        method: 'GET',
+                        url: '/student/list',
+                    }).then(res => {
+                        this.tableData = res.data.data;
+                    }).catch(err => {
+                        console.log(err)
+                        console.log('Network error!')
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+</html>
